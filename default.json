@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Shared Renovate settings for Fullchee's personal projects.",
+  "extends": ["config:recommended", ":timezone(America/Toronto)", ":label(dependencies)"],
+  "schedule": ["before 9am on monday"],
+  "prConcurrentLimit": 5,
+  "minimumReleaseAge": "5 days",
+  "internalChecksFilter": "strict",
+  "dependencyDashboard": {
+    "labels": ["dependencies"],
+    "pinned": true
+  }
+}
